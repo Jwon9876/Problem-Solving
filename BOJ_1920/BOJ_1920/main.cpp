@@ -1,10 +1,3 @@
-//
-//  main.cpp
-//  BOJ_1920
-//
-//  Created by 최주원 on 2022/05/05.
-//
-
 #include <cstdio>
 #include <algorithm>
 
