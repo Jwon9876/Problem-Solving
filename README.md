@@ -40,7 +40,7 @@
 
 ## 프로그래머스
 
-* https://school.programmers.co.kr/learn/challenges?order=acceptance_desc&statuses=solved&levels=1&languages=cpp%2Cjavascript
+* https://school.programmers.co.kr/learn/challenges
 
 <br/>
 
