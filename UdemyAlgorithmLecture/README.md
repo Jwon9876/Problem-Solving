@@ -5,6 +5,8 @@
 
 <!-- :heavy_check_mark -->
 
+<br/>
+
 No  | Lecture Name | Check
 -- | ------- | -----
 1 | 빅오 표기법 (Big O Notation) | 
