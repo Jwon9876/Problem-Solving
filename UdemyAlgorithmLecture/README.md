@@ -5,7 +5,7 @@
 
 <!-- :heavy_check_mark -->
 
-#  | Lecture Name | Check
+No  | Lecture Name | Check
 -- | ------- | -----
 1 | 빅오 표기법 (Big O Notation) | 
 2 | 배열과 오브젝트의 성능평가 | 
