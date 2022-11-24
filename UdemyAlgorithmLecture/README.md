@@ -9,7 +9,7 @@
 
 No  | Lecture Name | Check
 -- | ------- | -----
-1 | 빅오 표기법 (Big O Notation) | 
+1 | [빅오 표기법 (Big O Notation)](https://github.com/Jwon9876/Problem-Solving/tree/main/UdemyAlgorithmLecture/BigONotation) | 
 2 | 배열과 오브젝트의 성능평가 | 
 3 | 문제 해결 접근법 | 
 4 | 문제 해결 패턴 | 
@@ -38,3 +38,6 @@ No  | Lecture Name | Check
 27 | 다익스트라 알고리즘 (Dijkstra's Algorithm) | 
 28 | 동적 프로그래밍 | 
 29 | 더 와일드 웨스트 (The Wild West) | 
+
+
+
