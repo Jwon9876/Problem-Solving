@@ -8,7 +8,7 @@
 <br/>
 
 No  | Lecture Name | Check
--- | ------- | ---
+-- | ------- | :---:
 1 | [빅오 표기법 (Big O Notation)](https://github.com/Jwon9876/Problem-Solving/tree/main/UdemyAlgorithmLecture/1.BigONotation) | ✅
 2 | [배열과 오브젝트의 성능평가](https://github.com/Jwon9876) | 
 3 | [문제 해결 접근법](https://github.com/Jwon9876) | 
