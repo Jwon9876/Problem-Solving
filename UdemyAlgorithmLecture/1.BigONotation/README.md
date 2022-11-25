@@ -56,6 +56,7 @@ console.log(`Time Elapsed: ${(time2 - time1) / 1000} seconds.`)
 ```
 첫 번째 예시 코드: O(5n + 2) -> O(n)
 두 번째 예시 코드: O(3)
+
 ```
 
 
