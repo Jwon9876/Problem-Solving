@@ -1,6 +1,4 @@
 function solution(s){
-    // var answer = false;
-    
     
     var openCount = 0;
     var closeCount = 0;
@@ -17,5 +15,5 @@ function solution(s){
         return (openCount == closeCount) ? (true) : (false); 
     }
     
-
+    return false;
 }
