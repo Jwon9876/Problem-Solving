@@ -1,5 +1,5 @@
 function solution(s){
-    var answer = false;
+    // var answer = false;
     
     
     var openCount = 0;
