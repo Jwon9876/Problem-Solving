@@ -23,25 +23,3 @@ function solution(sizes) {
     return answer;
     
 }
-
-
-
-// 14 4
-// 19 6
-// 16 6
-// 18 7
-// 11 7
-
-/*
-
-위치 변환
-
-[b, a]
-if a > b -> [a, b]
-else [b, a]
-
-5 by 2
-for(){
-
-}
-*/
