@@ -3,9 +3,7 @@ function solution(s) {
     
     var wordIndex = 0;
     
-    for(let i = 0; i < s.length; i++){
-        
-
+    for(let i = 0; i < s.length; i++){        
         if(s[i] == ' '){
             wordIndex = 0;
             answer += " ";
@@ -13,15 +11,6 @@ function solution(s) {
             wordIndex++;            
             (wordIndex % 2 == 1) ? (answer += s[i].toUpperCase()) : (answer += s[i].toLowerCase());
         }
-        
-        console.log(wordIndex)        
     }
-    
-    
-    
-    
-    
-    
-    
     return answer;
 }
