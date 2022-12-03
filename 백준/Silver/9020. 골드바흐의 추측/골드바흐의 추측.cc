@@ -12,7 +12,7 @@ using namespace std;
 
 vector <int> v(10000);
 
-void oddNumber(int num){
+void isPrime(int num){
 
     for(int i = 2; i < v.size(); i++){
         v[i] = i;
@@ -44,7 +44,7 @@ int main(int argc, const char * argv[]) {
         iter--;
         cin >> num;
 
-        oddNumber(num);
+        isPrime(num);
         
         for(int i = num/2; i >= 1; i--){
                 if(v[i] + v[num - i] == num) {
