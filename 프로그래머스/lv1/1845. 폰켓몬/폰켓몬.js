@@ -1,12 +1,7 @@
 function solution(nums) {
-    var answer = 0;
     
+    let arr = new Set(nums)
+    let filtered = [...arr]
     
-    console.log(nums.length / 2)
-    
-    var arr = new Set(nums)
-    arr = [...arr]
-    
-    console.log(arr)
-    return (nums.length / 2 < arr.length) ? (nums.length / 2) : (arr.length);
+    return (nums.length / 2 < filtered.length) ? (nums.length / 2) : (filtered.length);
 }
