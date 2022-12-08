@@ -6,10 +6,7 @@ function solution(n,a,b)
     // b: 5 -> 3 -> 2
     
     let left = (a >= b) ? (b) : (a)
-    let right = (a < b) ? (b) : (a)
-    
-    console.log(left, right)
-    
+    let right = (a < b) ? (b) : (a)    
     
     while(true){
         left /= 2;
@@ -18,19 +15,10 @@ function solution(n,a,b)
         left = Math.round(left)
         right = Math.round(right)
         
-        // console.log(left, right)
         answer++;
         
         if(left == right) break;
-        
-        
     }
     
-    
-    
-    
-    
-    
-
     return answer;
 }
