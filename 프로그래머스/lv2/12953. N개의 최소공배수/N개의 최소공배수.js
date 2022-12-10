@@ -1,7 +1,8 @@
 function solution(arr) {
     var answer = 0;
-    const maxValue = arr[0];
     arr.reverse()
+
+    const maxValue = arr[0];
 
     answer = maxValue;
     while(true){
