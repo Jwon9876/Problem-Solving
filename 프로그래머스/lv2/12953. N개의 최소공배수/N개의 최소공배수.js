@@ -1,9 +1,12 @@
 function solution(arr) {
     var answer = 0;
+    
+    arr.reverse();
+
     const maxValue = arr[0];
-    arr.reverse()
 
     answer = maxValue;
+    
     while(true){
         
         let sum = 0
@@ -13,6 +16,7 @@ function solution(arr) {
                 sum++;
             }
         }
+    
         if(sum == arr.length){
             break;
         }
