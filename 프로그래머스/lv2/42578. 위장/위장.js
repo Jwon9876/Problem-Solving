@@ -1,3 +1,8 @@
+/*
+(1 + a) - 1
+(1 + a)(1 + b) = a + b + ab + 1
+(1 + a)(1 + b)(1 + c) = a + b + c + ab + bc + ac + abc + 1
+*/
 function solution(clothes) {
     var answer = 1;
     
@@ -13,17 +18,11 @@ function solution(clothes) {
         )
     }
     
-    console.log(table)
-
-    
     for(row in table){
-        console.log(row, table[row])
         answer *= (table[row] + 1)
     }
     
     answer -= 1;
-
-    
     
     return answer;
 }
