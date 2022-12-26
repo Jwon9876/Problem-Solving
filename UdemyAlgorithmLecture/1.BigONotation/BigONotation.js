@@ -24,7 +24,6 @@ var time2 = performance.now();
 console.log(`Time Elapsed: ${(time2 - time1) / 1000} seconds.`)
 
 
-
 function countUpAndDown(n){
     console.log("Going Up");
     for (let i = 0; i < n; i++) {
@@ -39,6 +38,7 @@ function countUpAndDown(n){
     console.log("Back down. Bye");
 }
 
+
 function printAllPairs(n){
     for (let i = 0; i < n; i++){
     // O(n)
@@ -48,8 +48,3 @@ function printAllPairs(n){
         // O(n)
     }
 }
-
-
-
-
-countUpAndDown(10)
