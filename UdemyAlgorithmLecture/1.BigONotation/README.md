@@ -4,7 +4,7 @@
 
 * `Exmaple: 1 ~ n 까지의 합`
 
-```javascript
+```js
 function addUpToUsingLoop(n) {
     let total = 0;
     for (let i = 1; i <= n; i++) {
@@ -20,7 +20,7 @@ console.log(`Time Elapsed: ${(t2 - t1) / 1000} seconds.`)
 // Time Elapsed: 0.9547567499876022 seconds.
 ```
 
-```javascript
+```js
 function addUpToUsingMath(n) {
   return n * (n + 1) / 2;
 }
@@ -51,7 +51,7 @@ console.log(`Time Elapsed: ${(time2 - time1) / 1000} seconds.`)
 
 Big O Notation은 입력이 늘어날 수록 알고리즘 실행 시간이 어떻게 변화하는지를 설명하는 공식이다.
 즉, Big O Notation은 입력의 크기와 실행시간의 관계를 말하며, 오직 전반적인 추세에 주목한다.
-일반적으로 가장 높은 실행 시간 값들을 의미한다.
+일반적으로 가장 높은 실행 시간 값들을 의미한다(시간 복잡도).
 ```
 
 ```js
@@ -90,8 +90,3 @@ function printAllPairs(n){
 }
 // -> O(n^2)
 ```
-
-
-
-
-
