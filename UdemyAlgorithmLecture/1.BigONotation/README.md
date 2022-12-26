@@ -1,11 +1,6 @@
 # Big O Notation
 
-### A. What is Big O Notation?
-
-```
-기능을 구현함에 있어, 수 많은 구현 방법들이 존재한다.
-그 수 많은 구현 방법들을 Big O Notation을 통해 비교하고 성능을 평가하는 방법이다.
-```
+### A. 성능평가
 
 * `Exmaple: 1 ~ n 까지의 합`
 
@@ -44,20 +39,59 @@ console.log(`Time Elapsed: ${(time2 - time1) / 1000} seconds.`)
 
 두 코드 중 어떤 것이 더 성능이 좋은 지 확인하기 위해서는 최소 1시간이라는 시간을 소비해야만 한다.
 
-최소 1시간이라는 시간의 수고로움을 덜기 위해, 이럴 때 Big O Notation을 사용하여 비교한다.
+시간의 수고로움을 덜기 위해 성능 평가를 위한 방법이 필요하다.
 
 <br/>
 
-### B. Big O Notation
-
-개발 환경, 장비간 성능 차이로 단순히 시간을 비교하는 것은 의미가 없을 수도 있다. <br/>
-실행 시간을 비교하기보다 컴퓨터가 처리해야하는 연산 갯수를 계산하면, 보다 더 효율적인 성능 평가를 할 수 있을 것이다.
+### B. What is Big O Notation?
 
 ```
-첫 번째 예시 코드: O(5n + 2) -> O(n)
-두 번째 예시 코드: O(3)
+기능을 구현함에 있어, 수 많은 구현 방법들이 존재한다.
+그 수 많은 구현 방법들을 Big O Notation을 통해 비교하고 성능을 평가하는 방법이다.
 
+Big O Notation은 입력이 늘어날 수록 알고리즘 실행 시간이 어떻게 변화하는지를 설명하는 공식이다.
+즉, Big O Notation은 입력의 크기와 실행시간의 관계를 말하며, 오직 전반적인 추세에 주목한다.
+일반적으로 가장 높은 실행 시간 값들을 의미한다.
 ```
+
+```js
+function addUpToUsingMath(n) {
+  return n * (n + 1) / 2;
+}
+// -> O(n)
+```
+
+```js
+function countUpAndDown(n){
+    console.log("Going Up");
+    for (let i = 0; i < n; i++) {
+        console.log(i);
+    }
+    // O(n)
+    console.log("At the top! \n Going Down");
+    for (let j = n; j >= 0 ; j--) {
+        console.log(j);
+    }
+    // O(n)
+    console.log("Back down. Bye");
+}
+// -> O(n)
+```
+
+```js
+function printAllPairs(n){
+    for (let i = 0; i < n; i++){
+    // O(n)
+        for(let j = 0; j < n; j++){
+            console.log(i, j)
+        }
+        // O(n)
+    }
+}
+// -> O(n^2)
+```
+
+
 
 
 
