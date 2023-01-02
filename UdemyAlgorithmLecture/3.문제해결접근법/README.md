@@ -39,6 +39,8 @@
         * 리팩터링 하기 위한 다른 방법을 생각할 수 있는가
         * 다른 사람들은 어떤 방식으로 문제를 해결했는가
 
+         <br/>
+         
         ```js
         // not refactored
         function charCount(str){
