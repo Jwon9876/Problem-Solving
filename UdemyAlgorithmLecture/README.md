@@ -1,9 +1,6 @@
 # Udemy Algorithm Lecture
 
-
-* Lecture Checklist
-
-<!-- :heavy_check_mark: -->
+### `Lecture Checklist`
 
 <br/>
 
