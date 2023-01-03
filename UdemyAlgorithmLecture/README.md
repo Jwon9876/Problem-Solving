@@ -7,9 +7,9 @@
 No  | Lecture Name | Check
 :--: | :------- | :---:
 1 | [빅오 표기법 (Big O Notation)](https://github.com/Jwon9876/Problem-Solving/tree/main/UdemyAlgorithmLecture/1.BigONotation) | ✅
-2 | [배열과 오브젝트의 성능평가](https://github.com/Jwon9876/Problem-Solving/tree/main/UdemyAlgorithmLecture/2.%EB%B0%B0%EC%97%B4%EA%B3%BC%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8%EC%9D%98%EC%84%B1%EB%8A%A5%ED%8F%89%EA%B0%80) | ✅
-3 | [문제 해결 접근법](https://github.com/Jwon9876/Problem-Solving/blob/main/UdemyAlgorithmLecture/3.%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0%EC%A0%91%EA%B7%BC%EB%B2%95/README.md) | ✅
-4 | [문제 해결 패턴](https://github.com/Jwon9876/Problem-Solving/tree/main/UdemyAlgorithmLecture/4.%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0%ED%8C%A8%ED%84%B4) | ✅
+2 | [배열과 오브젝트의 성능평가](https://github.com/Jwon9876/Problem-Solving/tree/main/UdemyAlgorithmLecture/2.배열과오브젝트의성능평가) | ✅
+3 | [문제 해결 접근법](https://github.com/Jwon9876/Problem-Solving/blob/main/UdemyAlgorithmLecture/3.문제해결접근법) | ✅
+4 | [문제 해결 패턴](https://github.com/Jwon9876/Problem-Solving/tree/main/UdemyAlgorithmLecture/4.문제해결패턴) | ✅
 5 | [100% 선택적 도전 과제](https://github.com/Jwon9876) | 
 6 | [재귀 (Recursion)](https://github.com/Jwon9876) | 
 7 | [재귀 문제 집합](https://github.com/Jwon9876) | 
