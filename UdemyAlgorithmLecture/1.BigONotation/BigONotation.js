@@ -15,7 +15,7 @@ console.log(`Time Elapsed: ${(t2 - t1) / 1000} seconds.`)
 
 
 function addUpToUsingMath(n) {
-  return n * (n + 1) / 2;
+    return n * (n + 1) / 2;
 }
 
 var time1 = performance.now();
@@ -24,14 +24,14 @@ var time2 = performance.now();
 console.log(`Time Elapsed: ${(time2 - time1) / 1000} seconds.`)
 
 
-function countUpAndDown(n){
+function countUpAndDown(n) {
     console.log("Going Up");
     for (let i = 0; i < n; i++) {
         console.log(i);
     }
     // O(n)
     console.log("At the top! \n Going Down");
-    for (let j = n; j >= 0 ; j--) {
+    for (let j = n; j >= 0; j--) {
         console.log(j);
     }
     // O(n)
@@ -39,10 +39,10 @@ function countUpAndDown(n){
 }
 
 
-function printAllPairs(n){
-    for (let i = 0; i < n; i++){
-    // O(n)
-        for(let j = 0; j < n; j++){
+function printAllPairs(n) {
+    for (let i = 0; i < n; i++) {
+        // O(n)
+        for (let j = 0; j < n; j++) {
             console.log(i, j)
         }
         // O(n)

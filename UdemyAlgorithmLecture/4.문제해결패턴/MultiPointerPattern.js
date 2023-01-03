@@ -1,33 +1,33 @@
-function sumZero(arr){
+function sumZero(arr) {
     //  O(N^2)
-    for(let i = 0; i < arr.length; i++){
-        for(let j = i+1; j < arr.length; j++){
-            if(arr[i] + arr[j] === 0){
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] + arr[j] === 0) {
                 return [arr[i], arr[j]];
             }
         }
     }
 }
 
-console.log(sumZero([-4,-3,-2,-1,0,1,2,5]))
-console.log(sumZero([-4,-3,-2,-1,0,1,2,3,5]))
+console.log(sumZero([-4, -3, -2, -1, 0, 1, 2, 5]))
+console.log(sumZero([-4, -3, -2, -1, 0, 1, 2, 3, 5]))
 
-function RefactoredSumZero(arr){
+function RefactoredSumZero(arr) {
     //  O(N)
     let left = 0;
     let right = arr.length - 1;
 
-    while(left < right){
+    while (left < right) {
         let sum = arr[left] + arr[right];
-        if(sum === 0){
+        if (sum === 0) {
             return [arr[left], arr[right]];
-        } else if(sum > 0){
+        } else if (sum > 0) {
             right--;
-        } else{
+        } else {
             left++;
         }
     }
 }
 
-console.log(RefactoredSumZero([-4,-3,-2,-1,0,1,2,5]))
-console.log(RefactoredSumZero([-4,-3,-2,-1,0,1,2,3,5]))
+console.log(RefactoredSumZero([-4, -3, -2, -1, 0, 1, 2, 5]))
+console.log(RefactoredSumZero([-4, -3, -2, -1, 0, 1, 2, 3, 5]))
