@@ -10,7 +10,7 @@ No  | Lecture Name | Check
 2 | [배열과 오브젝트의 성능평가](https://github.com/Jwon9876/Problem-Solving/tree/main/UdemyAlgorithmLecture/2.배열과오브젝트의성능평가) | ✅
 3 | [문제 해결 접근법](https://github.com/Jwon9876/Problem-Solving/blob/main/UdemyAlgorithmLecture/3.문제해결접근법) | ✅
 4 | [문제 해결 패턴](https://github.com/Jwon9876/Problem-Solving/tree/main/UdemyAlgorithmLecture/4.문제해결패턴) | ✅
-5 | [100% 선택적 도전 과제](https://github.com/Jwon9876/Problem-Solving/tree/main/UdemyAlgorithmLecture/5.100%선택적도전과제) | ✅
+5 | [100% 선택적 도전 과제](https://github.com/Jwon9876/Problem-Solving/tree/main/UdemyAlgorithmLecture/5.100%25선택적도전과제) | ✅
 6 | [재귀 (Recursion)](https://github.com/Jwon9876) | 
 7 | [재귀 문제 집합](https://github.com/Jwon9876) | 
 8 | [보너스 도전 재귀 문제](https://github.com/Jwon9876) | 
