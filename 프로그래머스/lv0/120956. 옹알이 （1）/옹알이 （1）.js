@@ -9,10 +9,7 @@ function solution(babbling) {
     babbling = babbling.map(v => v.replace("woo", "*"))
     babbling = babbling.map(v => v.replace("ma", "*"))
     
-    const regexr = /^\**\*$/g
-    // const regexr = / [^a-z]/g  
-    
-
+    const regexr = /^\**\*$/g    
 
     for(const value of babbling){        
         if(value.match(regexr)){
