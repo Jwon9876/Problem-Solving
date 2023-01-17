@@ -40,23 +40,15 @@ function solution(dirs) {
         
         let currentX = dimensionObj.x;
         let currentY = dimensionObj.y;
+        
         if(startX !== currentX || startY !== currentY){
             visitedTrack.add(""+startX+startY+currentX+currentY)
             visitedTrack.add(""+currentX+currentY+startX+startY)
-            
         }
         
         dimensionObj.startX = startX
         dimensionObj.startY = startY
-        
-
-        
     }
-
-    
-    console.log(visitedTrack);
-    // console.log(visitedTrack.length);
-    
     
     return visitedTrack.size / 2;
 }
