@@ -10,12 +10,7 @@ function solution(s) {
             answer.push(i - position[s[i]]);
         }
         position[s[i]] = i
-        
     }
-    
-    
-    
-    
-    
+
     return answer;
 }
