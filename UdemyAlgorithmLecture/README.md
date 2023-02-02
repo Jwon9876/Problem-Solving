@@ -12,7 +12,7 @@ No  | Lecture Name | Check
 4 | [문제 해결 패턴](https://github.com/Jwon9876/Problem-Solving/tree/main/UdemyAlgorithmLecture/4.문제해결패턴) | ✅
 5 | [100% 선택적 도전 과제](https://github.com/Jwon9876/Problem-Solving/tree/main/UdemyAlgorithmLecture/5.100%25선택적도전과제) | ✅
 6 | [재귀 (Recursion)](https://github.com/Jwon9876/Problem-Solving/tree/main/UdemyAlgorithmLecture/6.Recursion) | ✅
-7 | [재귀 문제 집합](https://github.com/Jwon9876) | 
+7 | [재귀 문제 집합](https://github.com/Jwon9876) | ✅
 8 | [보너스 도전 재귀 문제](https://github.com/Jwon9876) | 
 9 | [검색 알고리즘](https://github.com/Jwon9876) | 
 10 | [버블정렬](https://github.com/Jwon9876) | 
