@@ -11,7 +11,7 @@ No  | Lecture Name | Check
 3 | [문제 해결 접근법](https://github.com/Jwon9876/Problem-Solving/blob/main/UdemyAlgorithmLecture/3.문제해결접근법) | ✅
 4 | [문제 해결 패턴](https://github.com/Jwon9876/Problem-Solving/tree/main/UdemyAlgorithmLecture/4.문제해결패턴) | ✅
 5 | [100% 선택적 도전 과제](https://github.com/Jwon9876/Problem-Solving/tree/main/UdemyAlgorithmLecture/5.100%25선택적도전과제) | ✅
-6 | [재귀 (Recursion)](https://github.com/Jwon9876/Problem-Solving/tree/main/UdemyAlgorithmLecture/6.Recursion) | 
+6 | [재귀 (Recursion)](https://github.com/Jwon9876/Problem-Solving/tree/main/UdemyAlgorithmLecture/6.Recursion) | ✅
 7 | [재귀 문제 집합](https://github.com/Jwon9876) | 
 8 | [보너스 도전 재귀 문제](https://github.com/Jwon9876) | 
 9 | [검색 알고리즘](https://github.com/Jwon9876) | 
