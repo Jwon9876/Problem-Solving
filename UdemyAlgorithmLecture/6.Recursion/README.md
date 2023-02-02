@@ -91,3 +91,69 @@ function factorialUsingRecursion(num){
     return num * factorial(num-1);
 }
 ```
+
+### E. 재귀 함수의 잠재적 위험성
+
+* No Base Case
+
+* 잘못된 반환값을 전달하거나, 반환값을 전달하지 않는 경우
+
+* Stack Overflow
+
+
+### F. Helper Method Recursion
+
+* 재귀적이지 않은 외부 함수가 재귀적인 내부 함수를 사용하는 패턴
+
+```js
+function collectOddValues(arr){
+    
+    let result = [];
+
+    function helper(helperInput){
+        if(helperInput.length === 0) {
+            return;
+        }
+        
+        if(helperInput[0] % 2 !== 0){
+            result.push(helperInput[0]);
+        }
+        
+        helper(helperInput.slice(1));
+    }
+    
+    helper(arr);
+
+    return result;
+}
+
+collectOddValues([1,2,3,4,5,6,7,8,9]);
+```
+
+### G. 순수 재귀
+
+* Helper Method Recursion와 같이 외부 데이터 구조를 사용하지 않고, 필요한 모든 코드가 함수 자체에 포함되며, 재귀적이으로 동작한다.
+
+* 배열을 사용하고 싶은 경우에, Javascript 내장 함수를 사용하여 배열을 변경하지 않고
+순수 재귀 함수를 만들 수 있다.
+
+```js
+function collectOddValues(arr){
+    let newArr = [];
+    
+    if(arr.length === 0) {
+        return newArr;
+    }
+        
+    if(arr[0] % 2 !== 0){
+        newArr.push(arr[0]);
+    }
+        
+    // tempArr = [1,2,3,4,5] 
+    // tempArr.slice(1) -> [2,3,4,5]
+    newArr = newArr.concat(collectOddValues(arr.slice(1)));
+    return newArr;
+} 
+
+collectOddValues([1,2,3,4,5]);
+```
