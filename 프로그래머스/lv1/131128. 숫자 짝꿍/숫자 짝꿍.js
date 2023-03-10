@@ -28,3 +28,29 @@ function solution(x, y) {
     
     return (!answer.replaceAll("0", "").length) ? ("0") : (answer);
 }
+
+const count = (a, v) => a.filter(w => w === v).length;
+const uniq = a => a.filter((v, i, array) => array.indexOf(v) === i);
+const derive = a => a.sort((l, r) => r.number - l.number).flatMap(v => Array(v.count).fill(v.number).join('')).join('');
+
+const findPair = (a, b) => {
+	const sa = a.split('');
+	const sb = b.split('');
+	const ua = uniq(sa);
+	const r = ua.map(v => ({number: v, count: Math.min(count(sa, v), count(sb, v))}));
+	return r.filter(v => v.count);
+}
+
+
+function anotherSolution() {
+    [
+        ["100", "2345"],
+        ["100", "203045"],
+        ["100", "123450"],
+        ["12321", "42531"],
+        ["5525", "1255"],
+        ["3403", "13203"],
+    ].map(a => derive(findPair(...a)))
+        .map(v => v === '' ? -1 : v)
+        .map(v => parseInt(v))    
+}
