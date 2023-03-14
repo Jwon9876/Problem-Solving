@@ -1,31 +1,31 @@
 function solution(x, y) {
-    
+
     let xNumberCountArr = new Array(10).fill(0);
     let yNumberCountArr = new Array(10).fill(0);
     let answerArr = [];
-    
+
     for(const value of x){
         xNumberCountArr[value]++;
     }
-    
+
     for(const value of y){
         yNumberCountArr[value]++;
     }
-    
-    
+
+
     for(let i = 0; i < xNumberCountArr.length; i++){
-        
+
         let minCount = Math.min(xNumberCountArr[i], yNumberCountArr[i]);
-        
+
         for(let j = 0; j < minCount; j++){
             answerArr.push(i);
         }
     }
-    
+
     if(!answerArr.length) return "-1";
-    
+
     let answer = answerArr.sort((a, b) => b - a).join("");
-    
+
     return (!answer.replaceAll("0", "").length) ? ("0") : (answer);
 }
 
@@ -52,5 +52,17 @@ function anotherSolution() {
         ["3403", "13203"],
     ].map(a => derive(findPair(...a)))
         .map(v => v === '' ? -1 : v)
-        .map(v => parseInt(v))    
+        .map(v => parseInt(v))
+}
+
+const otherSolution = (x, y) => {
+
+    const minRangeSet = [...(x.length > y.length) ? (new Set([...x])) : (new Set([...y]))];
+    const countNum = (a, v) => a.filter(w => w === v).length;
+    const countNumObj = minRangeSet.map(v => ({number: v, count: Math.min(countNum(x.split(""), v), countNum(y.split(""), v))}));
+
+    const pairNumArr = countNumObj.reduce((a, v) => a + v.number.repeat(v.count), "").split("").sort().reverse();
+
+    return !pairNumArr.length ? "-1" : +(pairNumArr.join("")).toString();
+
 }
