@@ -17,7 +17,8 @@ while (id < arr.length){
     if(arr[id] == KOREA[k]){
         koreaStr += arr[id];
         k++
-    } else if(arr[id] == YONSEI[y]){
+    } 
+    if(arr[id] == YONSEI[y]){
         yonseiStr += arr[id];
         y++
     }
