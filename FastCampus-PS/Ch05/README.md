@@ -58,6 +58,67 @@ console.log(result !== -1 ? `${result + 1}번째 원소입니다.` : '원소가 
 * 억 단위 이상 탐색 범위에서 최적의 해를 찾아야 하는 경우
 * **데이터를 정렬**한 뒤, 다수의 쿼리를 날려야 하는 경우
 
+### 정렬된 배열에서 특정 원수의 개수 구하기
+* 정렬된 배열에서 특정 원소를 찾거나, 특정 원소의 위치를 찾는 것이 아닌, 값이 특정 범위의 해당하는 원소의 개수를 계산하는 경우
+* 이 문제를 해결하기 위해, lowerBound()와 upperBound() 함수를 사용할 수 있다.
+* lowerBound(): 찾고자 하는 값 이상이 처음으로 등장하는 위치
+* upperBound(): 찾고자 하는 값보다 큰 값이 처음으로 등장하는 위치
+ 
+```javascript
+// lowerBound
+function lowerBound(array, target, start, end) {
+  while (start < end) {
+    const mid = Math.floor((start + end) / 2);
+    if (array[mid] >= target) end = mid;
+    else start = mid + 1;
+  }
+  return end;
+}
+
+const target = 2;
+const array = [1, 2, 2, 2, 3];
+const result = lowerBound(array, target, 0, array.length);
+console.log(result);
+```
+
+```javascript
+// upperBound
+function upperBound(array, target, start, end) {
+  while (start < end) {
+    const mid = Math.floor((start + end) / 2);
+    if (array[mid] > target) end = mid;
+    else start = mid + 1;
+  }
+  return end;
+}
+const target = 2;
+const array = [1, 2, 2, 2, 3];
+const result = upperBound(array, target, 0, array.length);
+console.log(result);
+```
+
+* 두 코드의 가장 큰 차이는 array[mid] >= target인지, array[mid] > target인지의 차이이다.
+* lowerBound()는 찾고자 하는 값 이상이 처음으로 등장하는 위치를 찾기 위헤 array[mid] >= target을 사용한다.
+* upperBound()는 찾고자 하는 값보다 큰 값이 처음으로 등장하는 위치를 찾기 위해 array[mid] > target을 사용한다.
+
+
+```javascript
+function countByRange(array, leftValue, rightValue) {
+  const rightIndex = upperBound(array, rightValue, 0, array.length);
+  const leftIndex = lowerBound(array, leftValue, 0, array.length);
+  return rightIndex - leftIndex;
+}
+
+const array = [1, 1, 2, 2, 2, 2, 3];
+console.log(countByRange(array, 2, 2));
+console.log(countByRange(array, 1, 2));
+```
+
+* lowerBound()와 upperBound()를 이용해 배열 중 특정 범위에 속하는 데이터의 개수를 계산하는 countByRange() 함수를 구현할 수 있다.
+
+  
+  
+
 
 
 
