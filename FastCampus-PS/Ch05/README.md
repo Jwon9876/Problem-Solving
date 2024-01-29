@@ -121,9 +121,9 @@ console.log(countByRange(array, 1, 2));
 
 * lowerBound()와 upperBound()를 이용해 배열 중 특정 범위에 속하는 데이터의 개수를 계산하는 countByRange() 함수를 구현할 수 있다.
 
-  
-  
-
+### 파라메트릭 서치(Parametric Search)
+* 최적화 문제를 결정문제(Y/N)로 바꾸어 해결하는 기법
+    * 특정 조건을 만족하는 가장 알맞은 값을 빠르게 찾는 최적화 문제
 
 
 
