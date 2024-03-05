@@ -10,7 +10,7 @@ while(start <= end){
 	let mid = Math.floor((start + end) / 2);
 	let count = 0;
 	for (let i = 1; i <= n; i++) {
-		count += Math.min(n, parseInt(mid / i));
+		count += Math.min(n, Math.floor(mid / i));
 	}
 	
 	if(count >= k){
