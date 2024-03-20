@@ -7,8 +7,6 @@ const m = +b;
 const result = [];
 const arr = [];
 
-const visited = new Array(n + 1).fill(false);
-
 const dfs = (depth) => {
 	
 	if(depth == m){
@@ -17,10 +15,8 @@ const dfs = (depth) => {
 	}
 	
 	for (let i = 1; i <= n; i++) {
-		visited[i] = true;
 		arr.push(i);
 		dfs(depth + 1, i);
-		visited[i] = false;
 		arr.pop()
 	}
 }
